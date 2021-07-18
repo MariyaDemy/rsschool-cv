@@ -7,12 +7,18 @@ During university I combined my study, job and volunteering, working part time a
 My biggest strength is the ability to work under pressure and stay calm in almost every situation. At my job I was dealing with lots of people, with upset or angry too. And I did my best to help them solve their problems or calm down. So my second strength is my ability to communicate. I am good at listening and finding what people need to solve their problems.
 Now I want to develop in IT-sphere so I study programming on my own.
 
-__Skills:__ * HTML, CSS, JavaScript, Git
+__Skills:__ 
+* HTML, CSS, JavaScript, Git
 * English: B2
 * Swedish: A2
+
 __Code example__:
- ``` html
-code
+ ``` JavaScript
+ let i = 0;
+do {
+  alert( i );
+  i++;
+} while (i < 3);
 ```
 
 __Education:__ 
