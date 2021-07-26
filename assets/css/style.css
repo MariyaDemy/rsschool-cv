@@ -14,6 +14,9 @@
    margin-bottom: 0px;
 }
 
+.photo {
+    padding: 20px;
+}
 footer {
     display: flex;
    justify-content: space-between;
@@ -43,8 +46,30 @@ header {
 
 .code {
     position: absolute;
-    left: 950px;
-    top: 370px;
+    left: 970px;
+    top: 680px;
     background-color: #FFF;
     padding: 10px;
+}
+
+h1 {
+    color: #FFF9C4;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+.codehead {
+    color: #AA2EE6;
+
+}
+
+.description {
+    padding: 20px;
 }
