@@ -4,23 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>My CV</title>
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="outer">
-        <header>
-            <img class="photo" src="./assets/images/photo.jpg" alt="it's me" width="150" height="200">
-            <h1>Mariya Demidovich</h1>
-            <ul class="contacts">
-                <li>Telephone: + 375 29 738 84 94</li>
-                <li>Email: Mariya.Demi373@yandex.ru</li>
-                <li>Mariya.Demi373@gmail.com</li>
-            </ul>
-        </header>
-        <main>
-            <section class="aboutme">
+    <header>
+        <div class="container--header">
+            <div class="header__row">
+                <div class="header__img-wrapper">
+                    <img class="header__avatar" src="./assets/images/photo.jpg" width="60%" height="70%" alt="it's me">
+                </div>
+                <div class="header__content">
+                    <h1 class="header__name">Mariya Dziamidovich</h1>
+                    <h2 class="header__position">Front-end developer</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="navigation">
+            <div class="container">
+                <nav>
+                    <ul class="nav-links">
+                        <li class="nav-item">
+                            <a class="nav__link" href="#aboutme">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav__link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav__link" href="#edu">Education</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+        <section class="aboutme" id="aboutme">
+            <div class="container">
+
+                <ul class="contacts">
+                    <li class=contacts__item>Phone: + 375 29 738 84 94</li>
+                    <li class=contacts__item>Mariya.Demi373@gmail.com</li>
+                    <li class=contacts__item>Location: Minsk, Belarus</li>
+                </ul>
                 <h3>About me</h3>
                 <p class="description">During university I studied translation and two languages, English and Swedish,
                     and got high grades
@@ -40,45 +69,43 @@
                     people
                     need to solve their problems. Now I want to develop in IT-sphere so I study programming on my own.
                 </p>
-            </section>
-            <section class="skills">
-                <h3>Skills</h3>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <h4>Skills</h4>
                 <ul>
-                    <li>HTML, CSS, JavaScript, Git</li>
-                    <li>English: B2</li>
-                    <li>Swedish: A2</li>
+                    <li>HTML, CSS, JavaScript, Git, SCSS, PUG</li>
+                    <li>English: B2+</li>
+                    <li>Swedish: A2+</li>
                 </ul>
-            </section>
-            <section class="education">
-                <h3>Education</h3>
+            </div>
+        </section>
+        <section class="education" id="edu">
+            <div class="container">
+                <h5>Education</h5>
                 <ul>
                     <li>Minsk Linguistic State University - translator, PR-specialist, specialist in intercultural
-                        communication</li>
-                    <li>The Rolling Scopes School - HTML, CSS, JavaScript</li>
+                        communication, 2017-2022</li>
+                    <li>RS School - HTML, CSS, JavaScript, 2021 </li>
+                    <li>IT Shatle (HTML, CSS), 2021</li>
                 </ul>
-            </section>
-            <aside class="code">
-                <h3 class="codehead">Code example</h3>
-                <code>
-                    <pre>
-                    let i = 0;
-                    do {
-                    alert( i );
-                    i++;
-                    } while (i <code 3);
-                    </pre>                    
-                </code>
-            </aside>
-        </main>
-        <footer>
-            <a href="https://github.com/MariyaDemy" target="_blank">My GitHub profile</a>
-            <p>2021</p>
-            <p><a href="https://rs.school/js/" target="_blank"><img src="./assets/images/logo.svg" alt="rsschool logo"
-                        width="100" height="100"></a> </p>
-        </footer>
-    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__row">
+                <a href="https://github.com/MariyaDemy" target="_blank">My GitHub profile</a>
+                <a href="https://www.instagram.com/mariyademy/" target="_blank">
+                    <img src="./assets/images/instagram.svg" alt="My Instragram">
+                </a>
+                <h6>2021</h6>
+                <a href="https://rs.school/js/" target="_blank"><img src="./assets/images/logo.svg" alt="rsschool logo"
+                        width="100" height="100"></a>
+            </div>
+        </div>
+    </footer>
 </body>
-
-
 
 </html>
