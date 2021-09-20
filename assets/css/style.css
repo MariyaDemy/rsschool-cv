@@ -10,6 +10,7 @@ html {
     font-family: "Lato", sans-serif;
     color: rgb(37, 36, 36);
     background-color: #060c21;
+    scroll-behavior: smooth;
 }
 
 .container {
