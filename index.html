@@ -4,78 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>My CV</title>
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="outer">
-        <header>
-            <img class="photo" src="./assets/images/photo.jpg" alt="it's me" width="150" height="200">
-            <h1>Mariya Demidovich</h1>
-            <ul class="contacts">
-                <li>Telephone: + 375 29 738 84 94</li>
-                <li>Email: Mariya.Demi373@yandex.ru</li>
-                <li>Mariya.Demi373@gmail.com</li>
-            </ul>
-        </header>
-        <main>
-            <section class="aboutme">
-                <h3>About me</h3>
-                <p class="description">During university I studied translation and two languages, English and Swedish,
-                    and got high grades
-                    due
-                    to which I managed to pass university practice in an organization of my choice. It was The Hi-Tech
-                    Park
-                    Administration in Minsk where I translated texts related to the IT sphere. During university I
+    <!-- HEADER -->
+    <header>
+        <div class="container--header">
+            <div class="header__row">
+                <div class="header__img-wrapper">
+                    <img class="header__avatar" src="./assets/images/photo.jpg" alt="it's me">
+                </div>
+                <div class="header__content">
+                    <h1 class="header__name">Mariya Dziamidovich</h1>
+                    <h2 class="header__position">Front-end developer</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- NAVIGATION -->
+        <section class="navigation">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="nav-links">
+                        <li class="nav-item">
+                            <a class="nav__link" href="#aboutme">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav__link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav__link" href="#edu">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#code" class="nav__link">Code example</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav__link">Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="empty">.</h2>
+            </div>
+        </section>
+        <!-- ABOUT ME -->
+        <section class="aboutme" id="aboutme">
+            <div class="container">
+                <ul class="contacts">
+                    <li class=contacts__item>Phone: + 375 29 738 84 94</li>
+                    <li class=contacts__item>Mariya.Demi373@gmail.com</li>
+                    <li class=contacts__item>Location: Minsk, Belarus</li>
+                </ul>
+                <h3 class="aboutme__title">About me</h3>
+                <p class="aboutme__desc">During university I studied translation and several languages. I
                     combined
                     my study, job and volunteering, working part time at sports events and exhibitions. There I
                     communicated
                     with inordinate amount of people and honed important skills such as soft skills. My biggest strength
                     is
-                    the ability to work under pressure and stay calm in almost every situation. At my job I was dealing
-                    with
-                    lots of people, with upset or angry too. And I did my best to help them solve their problems or calm
-                    down. So my second strength is my ability to communicate. I am good at listening and finding what
+                    the ability to work under pressure and stay calm in almost every situation. I am good at listening
+                    and finding what
                     people
-                    need to solve their problems. Now I want to develop in IT-sphere so I study programming on my own.
+                    need to solve their problems. During my study, I became more and more interested in IT-sphere. I
+                    believe that technologies make people's life more interesting and
+                    can
+                    help us to achieve new heights. That's why I'm here.
                 </p>
-            </section>
-            <section class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML, CSS, JavaScript, Git</li>
-                    <li>English: B2</li>
-                    <li>Swedish: A2</li>
+            </div>
+        </section>
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h4 class="skills__title">Skills</h4>
+                <ul class="skills__list">
+                    <li class="skills__list-item">HTML, CSS, JavaScript, Git, SCSS, PUG</li>
+                    <li class="skills__list-item">Russian: native speaker</li>
+                    <li class="skills__list-item">English: B2+</li>
+                    <li class="skills__list-item"> Swedish: A2+</li>
                 </ul>
-            </section>
-            <section class="education">
-                <h3>Education</h3>
-                <ul>
-                    <li>Minsk Linguistic State University - translator, PR-specialist, specialist in intercultural
-                        communication</li>
-                    <li>The Rolling Scopes School - HTML, CSS, JavaScript</li>
+            </div>
+        </section>
+        <!-- EDUCATION -->
+        <section class="education" id="edu">
+            <div class="container">
+                <h5 class="edu__title">Education</h5>
+                <ul class="edu__list">
+                    <li class="edu__list-item">Minsk Linguistic State University - translator, PR-specialist, specialist
+                        in intercultural
+                        communication, 2017-2022</li>
+                    <li class="edu__list-item">RS School - JS/Front-end, 2021 </li>
+                    <li class="edu__list-item">IT Shatle (HTML, CSS), 2021</li>
                 </ul>
-            </section>
-            <aside class="code">
-                <h3 class="codehead">Code example</h3>
-                <pre>
-                    let i = 0;
-                    do {
-                    alert( i );
-                    i++;
-                    } while (i < 3);
-                </pre>
-            </aside>
-        </main>
-        <footer>
-            <a href="https://github.com/MariyaDemy" target="_blank">My GitHub profile</a>
-            <p>2021</p>
-            <p><a href="https://rs.school/js/" target="_blank"><img src="./assets/images/logo.svg" alt="rsschool logo"
-                        width="100" height="100"></a> </p>
-        </footer>
-    </div>
-</body>
+            </div>
+        </section>
+        <!-- CODE EXAMPLE -->
+        <section class="code" id="code">
+            <div class="container">
+                <h5 class="code__title">Code example</h5>
+                <img class="code__img" src="./assets/images/codeexample.png" alt="it's my code">
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h5 class="projects__title">Projects</h5>
 
+                <div class="works">
+
+                    <div class="work-wrap">
+                        <a href="https://mariyademy.github.io/diplom_mariyademy/dist/" class="work" target="_blank">
+                            <figure class="work__img-wrap">
+                                <img class="work__img" src="./assets/images/superpeer-min.png" alt="Superpeer">
+                            </figure>
+                            <span class="work__content">
+                                Courses landing page, SCSS/PUG/GULP/BEM
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="work-wrap">
+                        <a href="https://mariyademy.github.io/dz1_mariya/" class="work" target="_blank">
+                            <figure class="work__img-wrap">
+                                <img class="work__img" src="./assets/images/brella-min.png" alt="Brella">
+                            </figure>
+                            <span class="work__content">
+                                Health insurance main page, HTML/CSS
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <a class="projects__text" href="https://mariyademy.github.io/portfolio/" target="_blank">More you can
+                    see here</a>
+
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer__row">
+                <a href="https://github.com/MariyaDemy" target="_blank">My GitHub profile</a>
+                <a href="https://www.instagram.com/mariyademy/" target="_blank">
+                    <img src="./assets/images/instagram.svg" alt="My Instragram">
+                </a>
+                <h6>2021</h6>
+                <a href="https://rs.school/js/" target="_blank"><img src="./assets/images/logo.svg" alt="rsschool logo"
+                        width="100" height="100"></a>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>
