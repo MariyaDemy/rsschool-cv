@@ -7,6 +7,9 @@
     <title>My CV</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -105,7 +108,20 @@
         <section class="code" id="code">
             <div class="container">
                 <h5 class="code__title">Code example</h5>
-                <img class="code__img" src="./assets/images/codeexample.png" alt="it's my code">
+                <!-- <img class="code__img" src="./assets/images/codeexample.png" alt="it's my code"> -->
+                <pre>
+                    <code>
+                        function sumTriangularNumbers(n) {
+                            const sum = n * (n + 1) * (n + 2) / 6;
+                            
+                            if (n < 0) {
+                              return 0;
+                            } else  {
+                              return sum;
+                            }
+                          }
+                    </code>
+                </pre>
             </div>
         </section>
         <!-- PROJECTS -->

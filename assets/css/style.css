@@ -147,11 +147,14 @@ width: 42%;
     margin: 0 0 1rem 0;
 }
 
-.code__img {
+/* .code__img {
     width: 61vw;
     margin: 0 0 2rem 0;
+} */
+pre {
+    white-space:pre-wrap;
+    word-break: break-word;
 }
-
 /* PROJECTS BEGIN*/
 
 .projects__title {
