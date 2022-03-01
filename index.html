@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script src="./index.js" defer></script>
 </head>
 
 <body>
@@ -84,7 +85,7 @@
             <div class="container">
                 <h4 class="skills__title">Skills</h4>
                 <ul class="skills__list">
-                    <li class="skills__list-item">HTML, CSS, JavaScript, Git, SCSS, PUG</li>
+                    <li class="skills__list-item">HTML, CSS, JavaScript, React, Git, SCSS, PUG</li>
                     <li class="skills__list-item">Russian: native speaker</li>
                     <li class="skills__list-item">English: B2+</li>
                     <li class="skills__list-item"> Swedish: A2+</li>
@@ -95,31 +96,42 @@
         <section class="education" id="edu">
             <div class="container">
                 <h5 class="edu__title">Education</h5>
-                <ul class="edu__list">
+                <div class="edu__block">
+                    <ul class="edu__list">
                     <li class="edu__list-item">Minsk Linguistic State University - translator, PR-specialist, specialist
                         in intercultural
                         communication, 2017-2022</li>
                     <li class="edu__list-item">RS School - JS/Front-end, 2021 </li>
-                    <li class="edu__list-item">IT Shatle (HTML, CSS), 2021</li>
+                    <li class="edu__list-item">IT Shatle (HTML, CSS), August, 2021</li>
+                    <li class="edu__list-item">IT Shatle (JavaScript, React), February, 2022</li>
                 </ul>
+                <a href="./assets/images/diplom.png" target="_blank">
+                    <img class="edu__img" alt="certificate" 
+                    src="./assets/images/diplom.png">
+                </a>
+                </div>                
             </div>
         </section>
         <!-- CODE EXAMPLE -->
         <section class="code" id="code">
             <div class="container">
                 <h5 class="code__title">Code example</h5>
-                <!-- <img class="code__img" src="./assets/images/codeexample.png" alt="it's my code"> -->
+                <div class="code__block">
+                    <p class="code__par"></p>Total Completed Kata at Codewars (JS): <span class="kataCount"></span>
+                    <p class="code__par">Rank : <span class="rank"></span></p>
+                </div>
+                
                 <pre>
                     <code>
-                        function sumTriangularNumbers(n) {
-                            const sum = n * (n + 1) * (n + 2) / 6;
-                            
-                            if (n &lt; 0) {
-                              return 0;
-                            } else  {
-                              return sum;
-                            }
-                          }
+                        {"Java": 10, "Ruby": 80, "Python": 65}    -->  ["Ruby", "Python"]
+                        {"Hindi": 60, "Dutch" : 93, "Greek": 71}  -->  ["Dutch", "Greek", "Hindi"]
+                        {"C++": 50, "ASM": 10, "Haskell": 20}     -->  []
+
+                        function myLanguages(results) {
+
+                        return Object.keys(results).filter(res => results[res] >= 60).sort((a,b) => results[b]-results[a])
+                          
+                        }
                     </code>
                 </pre>
             </div>
@@ -130,6 +142,17 @@
                 <h5 class="projects__title">Projects</h5>
 
                 <div class="works">
+
+                    <div class="work-wrap">
+                        <a href="https://mariyademy.github.io/dz1_mariya/" class="work" target="_blank">
+                            <figure class="work__img-wrap">
+                                <img class="work__img" src="./assets/images/brella-min.png" alt="Brella">
+                            </figure>
+                            <span class="work__content">
+                                Health insurance main page, HTML/CSS
+                            </span>
+                        </a>
+                    </div>
 
                     <div class="work-wrap">
                         <a href="https://mariyademy.github.io/diplom_mariyademy/dist/" class="work" target="_blank">
@@ -143,19 +166,19 @@
                     </div>
 
                     <div class="work-wrap">
-                        <a href="https://mariyademy.github.io/dz1_mariya/" class="work" target="_blank">
+                        <a href="https://mariyademy.github.io/react_diplom/" class="work" target="_blank">
                             <figure class="work__img-wrap">
-                                <img class="work__img" src="./assets/images/brella-min.png" alt="Brella">
+                                <img class="work__img" src="./assets/images/todolist.png" alt="Todo list">
                             </figure>
                             <span class="work__content">
-                                Health insurance main page, HTML/CSS
+                                Todo list app, REACT/SCSS
                             </span>
-                        </a>
+                            </a>
                     </div>
+
                 </div>
                 <a class="projects__text" href="https://mariyademy.github.io/portfolio/" target="_blank">More you can
                     see here</a>
-
             </div>
         </section>
     </main>
@@ -163,11 +186,11 @@
     <footer>
         <div class="container">
             <div class="footer__row">
-                <a href="https://github.com/MariyaDemy" target="_blank">My GitHub profile</a>
+                <a  class="github" href="https://github.com/MariyaDemy" target="_blank">My GitHub profile</a>
                 <a href="https://www.instagram.com/mariyademy/" target="_blank">
                     <img src="./assets/images/instagram.svg" alt="My Instragram">
                 </a>
-                <h6>2021</h6>
+                <h6>2022</h6>
                 <a href="https://rs.school/js/" target="_blank"><img src="./assets/images/logo.svg" alt="rsschool logo"
                         width="100" height="100"></a>
             </div>
