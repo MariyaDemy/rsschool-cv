@@ -1,12 +1,12 @@
 # Mariya Demidovich
 
-## Web-developer
+## Web-developer :woman_technologist:
 
 ## Contacts
 
-*Email:* Mariya.Demi373@gmail.com
-*Github:* [MariyaDemy](https://github.com/MariyaDemy)
-*LinkedIn:* [Mariya Demidovich](https://www.linkedin.com/in/mariyademy/)
++ *Email:* Mariya.Demi373@gmail.com
++ *Github:* [MariyaDemy](https://github.com/MariyaDemy)
++ *LinkedIn:* [Mariya Demidovich](https://www.linkedin.com/in/mariyademy/)
 
 ## About me
 
@@ -27,7 +27,9 @@ I am a problem-solver who wants to progress further in programming. At the momen
 ## Work experience
 
 ***Technical Support Specialist / JavaScript Junior***
+
 XB Software Ltd.
+
 <sub>April 2022 - now</sub>
 
 ## Education
